@@ -98,6 +98,14 @@ python3 src/monopoly/examples/single_statement.py
 - Provides a generic parser that can be used without any predefined configuration (caveat emptor).
 - Includes a safety check (enabled by default) that validates totals for debit or credit statements.
 
+## Security & Privacy
+Monopoly is designed with security and privacy in mind, especially for handling Sensitive Personal Information (PII) found in bank statements.
+
+- **Local Processing**: All processing happens locally on your machine. No data is sent to external servers.
+- **No Network Activity**: The tool does not make any network requests during operation.
+- **Secure Password Handling**: PDF passwords are managed securely using environment variables and are never logged or exposed in error messages.
+- **Open Source**: The code is fully open source, allowing you to audit the behavior yourself.
+
 ## Development
 
 Clone the repo
